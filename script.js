@@ -7,7 +7,7 @@ async function shortenURL() {
     }
 
     try {
-        var response = await fetch('https://tinyurl.com/api-create.php?url=' + encodeURIComponent(urlInput));
+        var response = await fetch('https://www.short.akrmodz.tech/api-create.php?url=' + encodeURIComponent(urlInput));
         var shortenedURL = await response.text();
 
         document.getElementById("shortenedURL").innerHTML = shortenedURL;
